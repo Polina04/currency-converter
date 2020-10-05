@@ -1,0 +1,147 @@
+/* noto-serif-jp-regular - latin */
+@font-face {
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-serif-jp-v7-latin-regular.eot");
+  src: local("Noto Serif JP"), local("NotoSerifJP-Regular"),
+    url("../fonts/noto-serif-jp-v7-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/noto-serif-jp-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/noto-serif-jp-v7-latin-regular.woff") format("woff"),
+    url("../fonts/noto-serif-jp-v7-latin-regular.ttf") format("truetype"),
+    url("../fonts/noto-serif-jp-v7-latin-regular.svg#NotoSerifJP") format("svg");
+}
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: rgb(238, 238, 238);
+  color: rgba(71, 71, 71, 0.94);
+  padding: 20vh 0;
+}
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.fetch-form {
+  display: block;
+  width: 45%;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: rgb(58, 141, 83);
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 6px 6px 7px -2px rgba(92, 92, 92, 0.94);
+  -moz-box-shadow: 6px 6px 7px -2px rgba(92, 92, 92, 0.94);
+  box-shadow: 6px 6px 7px -2px rgba(92, 92, 92, 0.94);
+}
+.form-child {
+  font: inherit;
+  color: inherit;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+}
+.form-select-sign {
+  width: 80%;
+  margin: 0 auto 5px;
+  font-size: 1.6rem;
+  color: #414141f0;
+}
+.curr-select:last-of-type {
+  margin-bottom: 2.6rem;
+}
+.amount-input {
+  width: calc(80% - 20px);
+}
+
+.submit-btn {
+  margin-bottom: 0;
+  background-color: rgb(145, 207, 164);
+  line-height: 130%;
+  font-size: 1.8rem;
+}
+.history__title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: rgba(92, 92, 92, 0.94);
+}
+.history__list {
+  width: 45%;
+  margin: 0 auto;
+}
+.history__list > li {
+  padding: 0.7rem 0.7rem 0.7rem 4.8rem;
+  font: inherit;
+  color: inherit;
+  background-color: #fff;
+  line-height: 160%;
+  border-radius: 2px;
+  -webkit-box-shadow: 6px 6px 7px -2px rgba(92, 92, 92, 0.94);
+  -moz-box-shadow: 6px 6px 7px -2px rgba(92, 92, 92, 0.94);
+  box-shadow: 6px 6px 7px -2px rgba(92, 92, 92, 0.94);
+  background-image: url("../icons/720moneywithwings_100257.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 4px;
+  background-size: 31px 31px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  animation: scale-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.history__list > li:last-of-type {
+  margin-bottom: 0;
+}
+.history__item-amount--green {
+  color: rgb(58, 141, 83);
+}
+
+.history__item-arrow {
+  display: block;
+  width: 22px;
+  height: 18px;
+  background-image: url("../icons/arrow-12_91092.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.error {
+  text-align: center;
+  font-size: 2.2rem;
+}
+@keyframes line-through {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 110%;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
